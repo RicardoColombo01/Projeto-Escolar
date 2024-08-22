@@ -53,11 +53,17 @@ header {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 20px;
   color: white;
   background: rgb(121, 121, 121);
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 15 0 15px;
+  position: fixed; /* Fixa a imagem de fundo para que não role com a página */
+  z-index: 1000; /* Coloca a imagem de fundo atrás de todo o conteúdo */
 }
 
 .Logo img {
@@ -75,6 +81,7 @@ nav ul {
   justify-content: space-between; /* Espaça os itens uniformemente */
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding padrão */
+
   margin: 0; /* Remove margem padrão */
   display: flex; /* Alinha os itens em linha */
   color: inherit; /* Mantém a cor do texto padrão */
@@ -109,10 +116,13 @@ nav ul a:hover {
 /* Estilização básica do carrossel */
 .carousel {
   position: relative;
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 1000px;
   margin: auto;
   overflow: hidden;
+  border-style: ridge;
+  border-radius: 10%;
+  border-color: rgb(0, 131, 33);
 }
 
 .slides {
@@ -140,7 +150,7 @@ nav ul a:hover {
   color: white;
   border: none;
   padding: 100px;
-  height: 500px;
+  height: 600px;
   cursor: pointer;
   z-index: 1;
   opacity: 0; /* Torna os botões invisíveis */
@@ -148,11 +158,11 @@ nav ul a:hover {
 }
 
 .prev {
-  left: 400px;
+  left: 300px;
 }
 
 .next {
-  right: 400px;
+  right: 300px;
 }
 
 .home h1 {
@@ -160,6 +170,7 @@ nav ul a:hover {
   text-align: center;
   font-size: 35px;
   cursor: default;
+  margin-top: 100px;
 }
 
 .home h1:hover {
@@ -177,4 +188,59 @@ footer {
   background-color: rgb(56, 56, 56);
   text-align: center;
   font-size: 1.3em;
+}
+
+.texto,
+.texto2,
+.texto3 {
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: black;
+  text-align: center;
+}
+
+.sobre {
+  height: 200px;
+  width: 800px;
+  background-color: rgb(132, 252, 108);
+  text-align: center;
+  align-items: left;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  overflow-wrap: break-word; /* O texto será cortado se ultrapassar o limite do contêiner */
+  padding: 10px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgb(40, 73, 50);
+}
+
+.sobre2 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  height: 200px;
+  width: 800px;
+  background-color: rgb(132, 252, 108);
+  text-align: center;
+  align-items: right;
+  margin-left: 1000px;
+  margin-bottom: 10px;
+  margin-top: -236px;
+  overflow-wrap: break-word; /* O texto será cortado se ultrapassar o limite do contêiner */
+  padding: 10px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgb(40, 73, 50);
+}
+
+.sobre3 {
+  height: 200px;
+  width: 800px;
+  background-color: rgb(132, 252, 108);
+  text-align: center;
+  align-items: left;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  overflow-wrap: break-word; /* O texto será cortado se ultrapassar o limite do contêiner */
+  padding: 10px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgb(40, 73, 50);
 }
