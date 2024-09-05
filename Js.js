@@ -24,4 +24,4 @@ prevBtn.addEventListener("click", prevSlide);
 nextBtn.addEventListener("click", nextSlide);
 
 // Optional: Auto-slide every 5 seconds
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 10000);

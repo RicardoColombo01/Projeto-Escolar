@@ -3,106 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Sustentabilidade e Meio Ambiente</title>
     <script src="Js.js" defer></script>
   </head>
   <body>
-    <header class="Nav">
-      <nav>
-        <ul>
-          <a class="Logo" href="Index.html">
-            <img src="/Imagens/pngegg.png" alt="logo"
-          /></a>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre" class="dropbtn">Sobre</a></li>
-          <li><a href="#servico">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="home">
-      <h1>Sustentabilidade e Meio Ambiente</h1>
-      <div class="carousel">
-        <div class="slides">
-          <div class="slide">
-            <a
-              href="https://periodicos.ufpa.br/index.php/ethnoscientia/article/view/10467"
-              target="_blank"
-            >
-              <img src="/Imagens/plantinha.png" alt="Imagem 1" />
-              <div class="texto">
-                Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na
-                Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto
-                na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem
-                1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1
-              </div>
-            </a>
+    <div class="container-fluid">
+      <header class="Nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="Index.html">
+            <img src="/Imagens/pngegg.png" alt="logo" class="img-fluid" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#sobre" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sobre
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#sobre">Sobre</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servico">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+            </ul>
           </div>
-          <div class="slide">
-            <a href="https://www.exemplo1.com" target="_blank">
-              <img src="/Imagens/pngegg.png" alt="Imagem 2" />
-              <div class="texto2">
-                Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na
-                Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto
-                na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem
-                1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1
-              </div>
-            </a>
+        </nav>
+      </header>
+      <section class="home text-center">
+        <h1>Sustentabilidade e Meio Ambiente</h1>
+        <div class="carousel slide" id="carouselExampleControls">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://periodicos.ufpa.br/index.php/ethnoscientia/article/view/10467" target="_blank">
+                <img src="/Imagens/plantinha.png" class="d-block w-100" alt="Imagem 1" />
+                <div class="carousel-caption d-none d-md-block">
+                  Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.exemplo1.com" target="_blank">
+                <img src="/Imagens/pngegg.png" class="d-block w-100" alt="Imagem 2" />
+                <div class="carousel-caption d-none d-md-block">
+                  Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.exemplo1.com" target="_blank">
+                <img src="/Imagens/fundo.png" class="d-block w-100" alt="Imagem 3" />
+                <div class="carousel-caption d-none d-md-block">
+                  Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="slide">
-            <a href="https://www.exemplo1.com" target="_blank">
-              <img src="/Imagens/fundo.png" alt="Imagem 3" />
-              <div class="texto3">
-                Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na
-                Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto
-                na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem
-                1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section id="Sobre" class="py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="card h-100 mx-auto" style="background-color: rgb(233, 233, 233); border-color: green; box-shadow: 10px 15px 15px;">
+                <img src="Imagens/plantinha.png" class="card-img-top" alt="imagem da Marie Curie">
+                <div class="card-body">
+                  <h5 class="card-title">Título</h5>
+                  <p class="card-text">
+                    SobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobre
+                    SobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobre
+                  </p>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
-      </div>
-      <button class="prev">&#10094;</button>
-      <button class="next">&#10095;</button>
-    </section>
-    <br />
-    <br />
-    <br />
-    <br />
-    <section id="sobre">
-      <div class="sobre">
-        <img src="/Imagens/plantinha.png" alt="Imagem sobre essa parte sobre" width="500"/>
-      <h2>Sobre o Tema</h2>
-      <h3>
-        Tema
-        TemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTema
-        TemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTema
-      </h3>
-      </div>
-    </section>
+      </section>
+      <footer id="contato" class="text-center py-4">
+        <p>&copy; Ricardo Colombo</p>
+        <p>2024</p>
+      </footer>
+    </div>
 
-    <section class="sobre2">
-      <h2>Sobre o Tema</h2>
-      <h3>
-        Tema
-        TemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTema
-        TemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTema
-      </h3>
-    </section>
-
-    <section class="sobre3">
-      <h2>Sobre o Tema</h2>
-      <h3>
-        Tema
-        TemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTema
-        TemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTemaTema
-      </h3>
-    </section>
-
-    <footer id="contato">
-      <p>&copy; Ricardo Colombo</p>
-      <p>2024</p>
-    </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
