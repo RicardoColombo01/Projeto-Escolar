@@ -63,14 +63,14 @@ nav {
   z-index: 1000; /* Coloca a imagem de fundo atrás de todo o conteúdo */
 }
 
-.img-fluid img {
+.av img {
   display: flex;
   align-items: center;
   height: 50px; /* Ajusta o tamanho do logo */
   width: auto; /* Mantém a proporção da imagem */
 }
 
-.img-fluid img:hover {
+.Nav img:hover {
   opacity: 50%;
 }
 
@@ -106,7 +106,7 @@ nav ul li a {
 nav ul a:hover {
   border-color: #1d9b04;
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-  font-size: 1.1em;
+  font-size: 0.9em;
   transition: font-size 0.3s ease;
 }
 
