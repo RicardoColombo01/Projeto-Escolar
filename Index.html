@@ -13,152 +13,210 @@
     <style>
       /* Ajuste da logo para manter tamanho consistente em diferentes telas */
       .navbar-brand img {
-        width: 100px; /* Ajuste conforme necessário */
+        width: 100px;
         height: auto;
       }
-      /* Ajuste do tamanho do carrossel e das imagens */
+
+      .navbar-brand img:hover {
+        opacity: 50%;
+      }
+
+      /* Garantir que a navbar fique sobreposta ao conteúdo */
+      .navbar {
+        z-index: 1030;
+        background-color: rgb(75, 73, 73);
+        padding: 10px 20px;
+      }
+
+      /* Centralizar e ajustar o tamanho do carrossel */
+      .carousel-container {
+        max-width: 80%; /* Define o tamanho máximo como 80% da largura da tela */
+        margin: 0 auto; /* Centraliza horizontalmente */
+      }
+
       .carousel-inner {
-        max-height: 500px; /* Ajuste conforme necessário */
+        max-height: 800px;
         display: flex;
-        justify-content: cener;
         align-items: center;
       }
+
       .carousel-inner img {
-        max-height: 100%; /* Ajuste conforme necessário */
-        width: auto;
-        object-fit: contain;
+        max-height: 100%;
+        width: 100%; /* Garante que a imagem preencha o container do carrossel */
+        object-fit: flex; /* Ajusta a imagem para cobrir o container de forma proporcional */
       }
+
       /* Ajuste do texto do carrossel */
       .carousel-caption {
-        color: #000; /* Define a cor do texto como preto */
+        color: #000;
       }
-      /* Ajusta o conteúdo para não ficar escondido atrás da navbar fixa */
+
+      /* Define o body como flexbox para garantir que o footer fique no fim da página */
       body {
-        padding-top: 56px; /* Altura da navbar, ajuste se necessário */
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Garante que o body tenha no mínimo a altura da viewport */
+        padding-top: 70px; /* Para ajustar o conteúdo com a navbar */
+        margin: 10px;
+      }
+
+      /* Faz com que o conteúdo principal ocupe o espaço disponível */
+      .container-fluid {
+        flex: 1;
+      }
+
+      /* Footer fixo na parte inferior e responsivo */
+      footer {
+        background-color: rgb(39, 39, 39);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        footer {
+          padding: 10px 0;
+        }
+      }
+      .col-lg-6 {
+        margin-bottom: 20px;
       }
     </style>
   </head>
   <body>
     <div class="container-fluid">
-      <header class="Nav">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-          <a class="navbar-brand" href="Index.html">
-            <img src="/Imagens/pngegg.png" alt="logo" class="img-fluid" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#Inicio">Início</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#servico">Serviços</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contato">Contato</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#sobre"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Sobre
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#sobre">Sobre</a></li>
-                </ul>
-              </li>
-            </ul>
+      <header class="Nav" id="Inicio">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="Index.html">
+              <img src="/Imagens/pngegg.png" alt="logo" class="img-fluid" />
+            </a>
+            <!-- Botão para abrir/fechar menu em telas menores -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Itens do menu -->
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#Inicio">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#servico">Serviços</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contato">Contato</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#sobre"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sobre
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#sobre">Sobre</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
-      <section class="home text-center" id="Inicio">
+
+      <section class="home text-center">
         <h1>Sustentabilidade e Meio Ambiente</h1>
-        <div class="carousel slide" id="carouselExampleControls">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <a
-                href="https://periodicos.ufpa.br/index.php/ethnoscientia/article/view/10467"
-                target="_blank"
-              >
-                <img
-                  src="/Imagens/plantinha.png"
-                  class="d-block w-100"
-                  alt="Imagem 1"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na
-                  Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem
-                  1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na
-                  Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1
-                </div>
-              </a>
+        <div class="carousel-container">
+          <div class="carousel slide" id="carouselExampleControls">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a
+                  href="https://periodicos.ufpa.br/index.php/ethnoscientia/article/view/10467"
+                  target="_blank"
+                >
+                  <img
+                    src="/Imagens/plantinha.png"
+                    class="d-block w-100"
+                    alt="Imagem 1"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    Texto na Imagem 1
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.exemplo1.com" target="_blank">
+                  <img
+                    src="/Imagens/pngegg.png"
+                    class="d-block w-100"
+                    alt="Imagem 2"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    Texto na Imagem 2
+                  </div>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.exemplo1.com" target="_blank">
+                  <img
+                    src="/Imagens/fundo.png"
+                    class="d-block w-100"
+                    alt="Imagem 3"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    Texto na Imagem 3
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="carousel-item">
-              <a href="https://www.exemplo1.com" target="_blank">
-                <img
-                  src="/Imagens/pngegg.png"
-                  class="d-block w-100"
-                  alt="Imagem 2"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na
-                  Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem
-                  1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na
-                  Imagem 1Texto na Imagem 1Texto na Imagem 1
-                </div>
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="https://www.exemplo1.com" target="_blank">
-                <img
-                  src="/Imagens/fundo.png"
-                  class="d-block w-100"
-                  alt="Imagem 3"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na
-                  Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na Imagem
-                  1Texto na Imagem 1Texto na Imagem 1Texto na Imagem 1Texto na
-                  Imagem 1Texto na Imagem 1Texto na Imagem 1
-                </div>
-              </a>
-            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </section>
+
       <section id="sobre" class="py-5">
         <div class="container">
           <div class="row justify-content-center">
@@ -180,8 +238,18 @@
                 <div class="card-body">
                   <h5 class="card-title">Título</h5>
                   <p class="card-text">
-                    SobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobre
-                    SobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobreSobre
+                    Sobre o tema de sustentabilidade e meio ambiente. Sobre o
+                    tema de sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente.
                   </p>
                 </div>
               </div>
@@ -203,10 +271,76 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title">Título Adicional</h5>
+                  <p class="card-text">Informações adicionais sobre o tema.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- terceiro card -->
+            <div class="col-lg-6 col-md-8">
+              <div
+                class="card h-100 mx-auto"
+                style="
+                  background-color: rgb(233, 233, 233);
+                  border-color: green;
+                  box-shadow: 10px 15px 15px;
+                "
+              >
+                <img
+                  src="/Imagens/plantinha.png"
+                  class="card-img-top"
+                  alt="imagem da Marie Curie"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Título</h5>
                   <p class="card-text">
-                    Informações adicionais sobre o tema de sustentabilidade e
-                    meio ambiente. Texto explicativo que adiciona mais contexto
-                    e detalhes.
+                    Sobre o tema de sustentabilidade e meio ambiente. Sobre o
+                    tema de sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- quarto card -->
+            <div class="col-lg-6 col-md-8">
+              <div
+                class="card h-100 mx-auto"
+                style="
+                  background-color: rgb(233, 233, 233);
+                  border-color: green;
+                  box-shadow: 10px 15px 15px;
+                "
+              >
+                <img
+                  src="/Imagens/plantinha.png"
+                  class="card-img-top"
+                  alt="imagem da Marie Curie"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Título</h5>
+                  <p class="card-text">
+                    Sobre o tema de sustentabilidade e meio ambiente. Sobre o
+                    tema de sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente. Sobre o tema de
+                    sustentabilidade e meio ambiente.
                   </p>
                 </div>
               </div>
@@ -214,11 +348,14 @@
           </div>
         </div>
       </section>
-      <footer id="contato" class="text-center py-4">
-        <p>&copy; Ricardo Colombo</p>
-        <p>2024</p>
-      </footer>
     </div>
+
+    <!-- Footer -->
+    <footer id="contato" class="text-center py-4">
+      <p>&copy; Ricardo Colombo</p>
+      <p>Contato: (11)11111-1111</p>
+      <p>2024</p>
+    </footer>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

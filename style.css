@@ -63,17 +63,6 @@ nav {
   z-index: 1000; /* Coloca a imagem de fundo atrás de todo o conteúdo */
 }
 
-.av img {
-  display: flex;
-  align-items: center;
-  height: 50px; /* Ajusta o tamanho do logo */
-  width: auto; /* Mantém a proporção da imagem */
-}
-
-.Nav img:hover {
-  opacity: 50%;
-}
-
 nav ul {
   justify-content: space-between; /* Espaça os itens uniformemente */
   list-style-type: none; /* Remove bullets */
@@ -195,4 +184,3 @@ footer {
   color: black;
   text-align: center;
 }
-
