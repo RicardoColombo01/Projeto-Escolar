@@ -57,7 +57,7 @@
         flex-direction: column;
         min-height: 100vh; /* Garante que o body tenha no mínimo a altura da viewport */
         padding-top: 70px; /* Para ajustar o conteúdo com a navbar */
-        margin: 10px;
+        margin: 0px;
       }
 
       /* Faz com que o conteúdo principal ocupe o espaço disponível */
@@ -74,7 +74,7 @@
       }
 
       footer p {
-        margin: 0;
+        margin: 1px;
       }
 
       @media (max-width: 768px) {
@@ -84,6 +84,26 @@
       }
       .col-lg-6 {
         margin-bottom: 20px;
+      }
+
+      /* Para aumentar os cards e deixá-los responsivos */
+      .card {
+        min-width: 300px; /* Define um tamanho mínimo para os cards */
+        max-width: 100%; /* Garante que o card não ultrapasse o tamanho da coluna */
+      }
+
+      .col-lg-6 {
+        flex: 0 0 48%; /* Cada card vai ocupar 48% do espaço, deixando 2% para margem */
+        max-width: 48%; /* Define o máximo para 48% da largura */
+        margin: 1%; /* Adiciona um espaçamento entre os cards */
+      }
+
+      /* Em telas menores (como smartphones), os cards ficam com 100% da largura */
+      @media (max-width: 768px) {
+        .col-lg-6 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
       }
     </style>
   </head>
@@ -221,14 +241,10 @@
         <div class="container">
           <div class="row justify-content-center">
             <!-- Primeiro card -->
-            <div class="col-lg-6 col-md-8">
+            <div class="col-lg-4 col-md-6 mb-5">
               <div
-                class="card h-100 mx-auto"
-                style="
-                  background-color: rgb(233, 233, 233);
-                  border-color: green;
-                  box-shadow: 10px 15px 15px;
-                "
+                class="card h-100 mx-auto shadow"
+                style="background-color: rgb(233, 233, 233)"
               >
                 <a
                   href="https://periodicos.ufpa.br/index.php/ethnoscientia/article/view/10467"
@@ -243,31 +259,17 @@
                 <div class="card-body">
                   <h5 class="card-title">Título</h5>
                   <p class="card-text">
-                    Sobre o tema de sustentabilidade e meio ambiente. Sobre o
-                    tema de sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente.
+                    Sobre o tema de sustentabilidade e meio ambiente.Sobre o tema de sustentabilidade e meio ambiente.Sobre o tema de sustentabilidade e meio ambiente.Sobre o tema de sustentabilidade e meio ambiente.Sobre o tema de sustentabilidade e meio ambiente.Sobre o tema de sustentabilidade e meio ambiente.Sobre o tema de sustentabilidade e meio ambiente.
                   </p>
                 </div>
               </div>
             </div>
+
             <!-- Segundo card -->
-            <div class="col-lg-6 col-md-8">
+            <div class="col-lg-4 col-md-6 mb-5">
               <div
-                class="card h-100 mx-auto"
-                style="
-                  background-color: rgb(209, 209, 209);
-                  border-color: green;
-                  box-shadow: 10px 15px 15px;
-                "
+                class="card h-100 mx-auto shadow"
+                style="background-color: rgb(233, 233, 233)"
               >
                 <img
                   src="Imagens/plantinha.png"
@@ -281,15 +283,11 @@
               </div>
             </div>
 
-            <!-- terceiro card -->
-            <div class="col-lg-6 col-md-8">
+            <!-- Terceiro card -->
+            <div class="col-lg-4 col-md-6 mb-5">
               <div
-                class="card h-100 mx-auto"
-                style="
-                  background-color: rgb(209, 209, 209);
-                  border-color: green;
-                  box-shadow: 10px 15px 15px;
-                "
+                class="card h-100 mx-auto shadow"
+                style="background-color: rgb(233, 233, 233)"
               >
                 <img
                   src="Imagens/plantinha.png"
@@ -299,32 +297,17 @@
                 <div class="card-body">
                   <h5 class="card-title">Título</h5>
                   <p class="card-text">
-                    Sobre o tema de sustentabilidade e meio ambiente. Sobre o
-                    tema de sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente.
+                    Sobre o tema de sustentabilidade e meio ambiente.
                   </p>
                 </div>
               </div>
             </div>
 
-            <!-- quarto card -->
-            <div class="col-lg-6 col-md-8">
+            <!-- Quarto card -->
+            <div class="col-lg-4 col-md-6 mb-5">
               <div
-                class="card h-100 mx-auto"
-                style="
-                  background-color: rgb(233, 233, 233);
-                  border-color: green;
-                  box-shadow: 10px 15px 15px;
-                "
+                class="card h-100 mx-auto shadow"
+                style="background-color: rgb(233, 233, 233)"
               >
                 <img
                   src="Imagens/plantinha.png"
@@ -334,18 +317,45 @@
                 <div class="card-body">
                   <h5 class="card-title">Título</h5>
                   <p class="card-text">
-                    Sobre o tema de sustentabilidade e meio ambiente. Sobre o
-                    tema de sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente. Sobre o tema de
-                    sustentabilidade e meio ambiente.
+                    Sobre o tema de sustentabilidade e meio ambiente.
+                  </p>
+                </div>
+              </div>
+            </div>
+              <!-- Quinto card -->
+              <div class="col-lg-4 col-md-6 mb-5">
+                <div
+                  class="card h-100 mx-auto shadow"
+                  style="background-color: rgb(233, 233, 233)"
+                >
+                  <img
+                    src="Imagens/plantinha.png"
+                    class="card-img-top"
+                    alt="imagem da Marie Curie"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Título</h5>
+                    <p class="card-text">
+                      Sobre o tema de sustentabilidade e meio ambiente.
+                    </p>
+                  </div>
+                </div>
+              </div>
+                <!-- Sexto card -->
+            <div class="col-lg-4 col-md-6 mb-5">
+              <div
+                class="card h-100 mx-auto shadow"
+                style="background-color: rgb(233, 233, 233)"
+              >
+                <img
+                  src="Imagens/plantinha.png"
+                  class="card-img-top"
+                  alt="imagem da Marie Curie"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Título</h5>
+                  <p class="card-text">
+                    Sobre o tema de sustentabilidade e meio ambiente.
                   </p>
                 </div>
               </div>
@@ -353,10 +363,9 @@
           </div>
         </div>
       </section>
-    </div>
 
     <!-- Footer -->
-    <footer id="contato" class="text-center py-4">
+    <footer id="contato" class="text-center py-6">
       <p>&copy; Ricardo Colombo</p>
       <p>Contato: (11)11111-1111</p>
       <p>2024</p>
