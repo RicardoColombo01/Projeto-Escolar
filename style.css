@@ -5,7 +5,6 @@ body {
 }
 
 body::before {
-  content: "";
   position: fixed; /* Fixa a imagem de fundo para que não role com a página */
   top: 0;
   left: 0;

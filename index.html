@@ -11,6 +11,11 @@
     <title>Sustentabilidade e Meio Ambiente</title>
     <script src="Js.js" defer></script>
     <style>
+    body{
+      background-color: rgba(110, 248, 117, 0.13);
+      font-family: Arial, sans-serif;
+    }
+
       /* Ajuste da logo para manter tamanho consistente em diferentes telas */
       .navbar-brand img {
         width: 100px;
@@ -105,6 +110,10 @@
           flex: 0 0 100%;
           max-width: 100%;
         }
+
+        .dropdown-menu{
+          font-size: 5px;
+        }
       }
     </style>
   </head>
@@ -139,7 +148,7 @@
                   <a class="nav-link" href="#Inicio">Início</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#servico">Serviços</a>
+                  <a class="nav-link" href="#sobre">Sobre</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#contato">Contato</a>
@@ -147,16 +156,16 @@
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#sobre"
+                    href="#"
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Sobre
+                   Mais
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#sobre">Sobre</a></li>
+                    <li><a class="dropdown-item" href="#"></a>Jesus te ama</li>
                   </ul>
                 </li>
               </ul>
@@ -172,40 +181,40 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <a
-                  href="https://periodicos.ufpa.br/index.php/ethnoscientia/article/view/10467"
+                  href="https://brasil.un.org/pt-br/175180-o-que-são-mudanças-climáticas#:~:text=Sobre%20a%20campanha-,As%20mudanças%20climáticas%20são%20transformações%20a%20longo%20prazo%20nos%20padrões,de%20variações%20no%20ciclo%20solar."
                   target="_blank"
                 >
                   <img
-                    src="Imagens/plantinha.png"
+                    src="Imagens/mudancas-climaticas.webp"
                     class="d-block w-100"
                     alt="Imagem 1"
                   />
                   <div class="carousel-caption d-none d-md-block">
-                    Mudanças Climáticas
+                   <h1>Mudanças Climáticas</h1> 
                   </div>
                 </a>
               </div>
               <div class="carousel-item">
-                <a href="https://www.exemplo1.com" target="_blank">
+                <a href="https://www.politize.com.br/justica-ambiental/" target="_blank">
                   <img
-                    src="Imagens/pngegg.png"
+                    src="Imagens/unnamed.jpg"
                     class="d-block w-100"
                     alt="Imagem 2"
                   />
                   <div class="carousel-caption d-none d-md-block">
-                    Justiça Ambiental
+                  
                   </div>
                 </a>
               </div>
               <div class="carousel-item">
-                <a href="https://www.exemplo1.com" target="_blank">
+                <a href="https://www.iis-rio.org/publicacoes/o-que-sao-solucoes-baseadas-na-natureza-sbn-e-quais-seus-beneficios/?gad_source=1&gclid=CjwKCAjw0aS3BhA3EiwAKaD2ZQTqhv4Y1b4gISbOW-EMqxqbP5liE6j1fTE6gYKzp6aXbrYefow9FhoCEpIQAvD_BwE" target="_blank">
                   <img
-                    src="Imagens/fundo.png"
+                    src="Imagens/1700482948537.jpeg"
                     class="d-block w-100"
                     alt="Imagem 3"
                   />
                   <div class="carousel-caption d-none d-md-block">
-                    Soluções Baseadas na Natureza (NBS - Nature-Based Solutions)
+                 <h1>  Soluções Baseadas na Natureza (NBS - Nature-Based Solutions)</h1>
                   </div>
                 </a>
               </div>
@@ -252,15 +261,15 @@
                   target="_blank"
                 >
                   <img
-                    src="Imagens/plantinha.png"
+                    src="Imagens/energia-hidreletrica-ou-solar.webp"
                     class="card-img-top"
                     alt="imagem da Marie Curie"
                   />
                 
                 <div class="card-body">
-                  <h5 class="card-title">Energia Renovável</h5>
-                  <h3 class="card-text">
-                    O uso de fontes de energia renováveis, como solar, eólica, geotérmica e hidrelétrica, é crucial para reduzir a dependência de combustíveis fósseis. Essas fontes de energia são sustentáveis, inesgotáveis e têm impacto ambiental muito menor em comparação com combustíveis fósseis, ajudando a combater o aquecimento global e a poluição.                  </h3>
+                  <h4 class="card-title">Energia Renovável</h4>
+                  <h5 class="card-text">
+                    O uso de fontes de energia renováveis, como solar, eólica, geotérmica e hidrelétrica, é crucial para reduzir a dependência de combustíveis fósseis. Essas fontes de energia são sustentáveis, inesgotáveis e têm impacto ambiental muito menor em comparação com combustíveis fósseis, ajudando a combater o aquecimento global e a poluição.                  </h5>
                 </div>
               </a>
               </div>
@@ -277,13 +286,13 @@
               target="_blank"
             >
                 <img
-                  src="Imagens/plantinha.png"
+                  src="Imagens/6088f0_48ddb5d0b1274d0287ab81724387b3d8~mv2.jpg"
                   class="card-img-top"
                   alt="imagem adicional"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Agricultura Sustentável e Segurança Alimentar</h5>
-                  <p class="card-text">A agricultura sustentável visa garantir a produção de alimentos sem esgotar os recursos naturais ou causar danos ambientais. Isso inclui práticas como a rotação de culturas, uso eficiente da água e redução de pesticidas. A segurança alimentar é outro aspecto importante, garantindo que a produção agrícola possa alimentar uma população crescente sem comprometer o meio ambiente.</p>
+                  <h4 class="card-title">Agricultura Sustentável e Segurança Alimentar</h4>
+                  <h5 class="card-text">A agricultura sustentável visa garantir a produção de alimentos sem esgotar os recursos naturais ou causar danos ambientais. Isso inclui práticas como a rotação de culturas, uso eficiente da água e redução de pesticidas. A segurança alimentar é outro aspecto importante, garantindo que a produção agrícola possa alimentar uma população crescente sem comprometer o meio ambiente.</h5>
                 </div>
               </a>
               </div>
@@ -300,15 +309,15 @@
               target="_blank"
             >
                 <img
-                  src="Imagens/plantinha.png"
+                  src="Imagens/7e48f2cc-34cd-4e6a-ac5f-ebea9bcab3ff.jpeg"
                   class="card-img-top"
                   alt="imagem da Marie Curie"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Economia Circular</h5>
-                  <p class="card-text">
+                  <h4 class="card-title">Economia Circular</h4>
+                  <h5 class="card-text">
                     A economia circular é um modelo de produção e consumo que visa a redução, reutilização, reciclagem e regeneração de materiais e produtos. Ao contrário do modelo linear (produzir, usar, descartar), a economia circular propõe um ciclo fechado, minimizando o desperdício e o uso de recursos naturais, promovendo uma economia mais sustentável e eficiente.
-                  </p>
+                  </h5>
                 </div>
               </a>
               </div>
@@ -325,15 +334,15 @@
               target="_blank"
             >
                 <img
-                  src="Imagens/plantinha.png"
+                  src="Imagens/20161103-biodiversidade-e1478200615127.jpg"
                   class="card-img-top"
                   alt="imagem da Marie Curie"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Conservação da Biodiversidade</h5>
-                  <p class="card-text">
+                  <h4 class="card-title">Conservação da Biodiversidade</h4>
+                  <h5 class="card-text">
                     A conservação da biodiversidade envolve proteger e restaurar habitats naturais e espécies ameaçadas. A perda de biodiversidade afeta negativamente os ecossistemas, serviços ecossistêmicos e, por consequência, a saúde humana e a economia. A preservação de espécies e ecossistemas é fundamental para manter o equilíbrio ambiental e garantir os recursos naturais para as futuras gerações.
-                  </p>
+                  </h5>
                 </div>
               </a>
               </div>
@@ -349,15 +358,15 @@
                 target="_blank"
               >
                   <img
-                    src="Imagens/plantinha.png"
+                    src="Imagens/f5f52dcee09db3a97ee77294fd175d64.webp"
                     class="card-img-top"
                     alt="imagem da Marie Curie"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Poluição dos Oceanos e Gestão de Recursos Hídricos</h5>
-                    <p class="card-text">
+                    <h4 class="card-title">Poluição dos Oceanos e Gestão de Recursos Hídricos</h4>
+                    <h5 class="card-text">
                       A poluição dos oceanos, causada por plásticos, produtos químicos e outros resíduos, tem impactos devastadores sobre a vida marinha e os ecossistemas costeiros. A gestão sustentável de recursos hídricos envolve o uso eficiente da água, a proteção de rios, lagos e aquíferos, além de iniciativas para reduzir a poluição e preservar a qualidade da água.
-                    </p>
+                    </h5>
                   </div>
                 </a>
                 </div>
@@ -373,15 +382,15 @@
               target="_blank"
             >
                 <img
-                  src="Imagens/plantinha.png"
+                  src="Imagens/1704549015675.png"
                   class="card-img-top"
                   alt="imagem da Marie Curie"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Sustentabilidade Urbana e Cidades Inteligentes</h5>
-                  <p class="card-text">
+                  <h4 class="card-title">Sustentabilidade Urbana e Cidades Inteligentes</h4>
+                  <h5 class="card-text">
                     Cidades sustentáveis buscam reduzir o impacto ambiental através de práticas como a mobilidade sustentável (bicicletas, transporte público eficiente), edifícios ecológicos, gerenciamento de resíduos e planejamento urbano inteligente. Cidades inteligentes utilizam tecnologia para melhorar a eficiência energética, reduzir a poluição e melhorar a qualidade de vida dos cidadãos, promovendo um crescimento urbano mais equilibrado e sustentável.
-                  </p>
+                  </h5>
                 </div>
               </a>
               </div>
