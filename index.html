@@ -7,13 +7,13 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" href="Imagens/pngegg.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <title>Sustentabilidade e Meio Ambiente</title>
-    <script src="Js.js" defer></script>
+
     <style>
-    body{
+    body {
       background-color: rgba(110, 248, 117, 0.13);
-      font-family: Arial, sans-serif;
     }
 
       /* Ajuste da logo para manter tamanho consistente em diferentes telas */
@@ -39,26 +39,51 @@
         margin: 0 auto; /* Centraliza horizontalmente */
       }
 
-      .carousel-inner {
-        max-height: 800px;
-        display: flex;
-        align-items: center;
-      }
+   /* Ajuste geral para as imagens do carrossel */
+.carousel-inner img {
+  width: 100%; /* Garante que a imagem preencha horizontalmente o carrossel */
+  height: 700px; /* Mantém a proporção da imagem */
+  max-height: 100%; /* Limita a altura máxima para evitar cortes verticais */
+  object-fit: cover; /* Ajusta a imagem para cobrir o container do carrossel */
+  object-position: center; /* Garante que a imagem fique centralizada */
+}
 
-      .carousel-inner img {
-        max-height: 100%;
-        width: 100%; /* Garante que a imagem preencha o container do carrossel */
-        object-fit: flex; /* Ajusta a imagem para cobrir o container de forma proporcional */
-      }
+/* Ajustes para o carrossel em telas menores */
+@media (max-width: 768px) {
+  .carousel-inner {
+    max-height: 400px; /* Altura máxima reduzida para telas menores */
+  }
 
-      /* Ajuste do texto do carrossel */
-      .carousel-caption {
-        color: #000000;
-        font-size: 30px;
-      }
+  .carousel-inner img {
+    width: 100%; /* Preenche a largura do carrossel */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 100%; /* Garante que a imagem não ultrapasse o container */
+    object-fit: cover; /* Ajusta a imagem para cobrir o container de maneira proporcional */
+    object-position: center; /* Mantém a imagem centralizada */
+  }
 
-      /* Define o body como flexbox para garantir que o footer fique no fim da página */
-      body {
+  .carousel-caption {
+    font-size: 18px; /* Reduz o tamanho do texto para telas pequenas */
+    padding: 10px;
+    z-index: 10;
+    position: absolute;
+    bottom: 20px;
+  }
+}
+
+/* Estilo geral para o texto no carrossel */
+.carousel-caption {
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  z-index: 10;
+  position: absolute;
+  bottom: 20px;
+}
+
+
+/* Define o body como flexbox para garantir que o footer fique no fim da página */
+ body {
         display: flex;
         flex-direction: column;
         min-height: 100vh; /* Garante que o body tenha no mínimo a altura da viewport */
@@ -110,11 +135,8 @@
           flex: 0 0 100%;
           max-width: 100%;
         }
-
-        .dropdown-menu{
-          font-size: 5px;
-        }
-      }
+      } 
+      /* FIm do style*/
     </style>
   </head>
   <body>
@@ -174,75 +196,51 @@
         </nav>
       </header>
 
-      <section class="home text-center">
-        <h1>Sustentabilidade e Meio Ambiente</h1>
+     
+      <section class="text-center">
+        <div class="home">
+          <h1>Sustentabilidade e Meio Ambiente</h1>
+        </div>
         <div class="carousel-container">
-          <div class="carousel slide" id="carouselExampleControls">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <a
-                  href="https://brasil.un.org/pt-br/175180-o-que-são-mudanças-climáticas#:~:text=Sobre%20a%20campanha-,As%20mudanças%20climáticas%20são%20transformações%20a%20longo%20prazo%20nos%20padrões,de%20variações%20no%20ciclo%20solar."
-                  target="_blank"
-                >
-                  <img
-                    src="Imagens/mudancas-climaticas.webp"
-                    class="d-block w-100"
-                    alt="Imagem 1"
-                  />
+                <a href="https://brasil.un.org/pt-br/175180-o-que-são-mudanças-climáticas#:~:text=Sobre%20a%20campanha-,As%20mudanças%20climáticas%20são%20transformações%20a%20longo%20prazo%20nos%20padrões,de%20variações%20no%20ciclo%20solar." target="_blank">
+                  <img src="Imagens/mudancas-climaticas-significados.webp" class="d-block w-100" alt="Imagem 1" />
                   <div class="carousel-caption d-none d-md-block">
-                   <h1>Mudanças Climáticas</h1> 
+                    <h1 style="color: #ffffff;">Mudanças Climáticas</h1>
                   </div>
                 </a>
               </div>
               <div class="carousel-item">
                 <a href="https://www.politize.com.br/justica-ambiental/" target="_blank">
-                  <img
-                    src="Imagens/unnamed.jpg"
-                    class="d-block w-100"
-                    alt="Imagem 2"
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                  
-                  </div>
+                  <img src="Imagens/unnamed.jpg" class="d-block w-100" alt="Imagem 2" />
                 </a>
               </div>
               <div class="carousel-item">
                 <a href="https://www.iis-rio.org/publicacoes/o-que-sao-solucoes-baseadas-na-natureza-sbn-e-quais-seus-beneficios/?gad_source=1&gclid=CjwKCAjw0aS3BhA3EiwAKaD2ZQTqhv4Y1b4gISbOW-EMqxqbP5liE6j1fTE6gYKzp6aXbrYefow9FhoCEpIQAvD_BwE" target="_blank">
-                  <img
-                    src="Imagens/1700482948537.jpeg"
-                    class="d-block w-100"
-                    alt="Imagem 3"
-                  />
+                  <img src="Imagens/Capa-solucoes-baseadas-na-natureza.webp" class="d-block w-100" alt="Imagem 3" />
                   <div class="carousel-caption d-none d-md-block">
-                 <h1>  Soluções Baseadas na Natureza (NBS - Nature-Based Solutions)</h1>
+                    <h1 style="color: rgb(255, 255, 255)">Soluções Baseadas na Natureza</h1>
                   </div>
                 </a>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
           </div>
         </div>
       </section>
@@ -263,13 +261,12 @@
                   <img
                     src="Imagens/energia-hidreletrica-ou-solar.webp"
                     class="card-img-top"
-                    alt="imagem da Marie Curie"
+                    alt="imagem sobre Energia Renovável"
                   />
                 
                 <div class="card-body">
                   <h4 class="card-title">Energia Renovável</h4>
-                  <h5 class="card-text">
-                    O uso de fontes de energia renováveis, como solar, eólica, geotérmica e hidrelétrica, é crucial para reduzir a dependência de combustíveis fósseis. Essas fontes de energia são sustentáveis, inesgotáveis e têm impacto ambiental muito menor em comparação com combustíveis fósseis, ajudando a combater o aquecimento global e a poluição.                  </h5>
+                  <h5 class="card-text"> O uso de fontes de energia renováveis, como solar, eólica, geotérmica e hidrelétrica, é crucial para reduzir a dependência de combustíveis fósseis. Essas fontes de energia são sustentáveis, inesgotáveis e têm impacto ambiental muito menor em comparação com combustíveis fósseis, ajudando a combater o aquecimento global e a poluição.                  </h5>
                 </div>
               </a>
               </div>
@@ -288,7 +285,7 @@
                 <img
                   src="Imagens/6088f0_48ddb5d0b1274d0287ab81724387b3d8~mv2.jpg"
                   class="card-img-top"
-                  alt="imagem adicional"
+                  alt="imagem Agricultura Sustentável e Segurança Alimentar"
                 />
                 <div class="card-body">
                   <h4 class="card-title">Agricultura Sustentável e Segurança Alimentar</h4>
@@ -311,7 +308,7 @@
                 <img
                   src="Imagens/7e48f2cc-34cd-4e6a-ac5f-ebea9bcab3ff.jpeg"
                   class="card-img-top"
-                  alt="imagem da Marie Curie"
+                  alt="imagem da Economia Circular"
                 />
                 <div class="card-body">
                   <h4 class="card-title">Economia Circular</h4>
@@ -336,7 +333,7 @@
                 <img
                   src="Imagens/20161103-biodiversidade-e1478200615127.jpg"
                   class="card-img-top"
-                  alt="imagem da Marie Curie"
+                  alt="imagem da Conservação da Biodiversidade"
                 />
                 <div class="card-body">
                   <h4 class="card-title">Conservação da Biodiversidade</h4>
@@ -360,7 +357,7 @@
                   <img
                     src="Imagens/f5f52dcee09db3a97ee77294fd175d64.webp"
                     class="card-img-top"
-                    alt="imagem da Marie Curie"
+                    alt="imagem da Poluição dos Oceanos e Gestão de Recursos Hídricos"
                   />
                   <div class="card-body">
                     <h4 class="card-title">Poluição dos Oceanos e Gestão de Recursos Hídricos</h4>
@@ -384,7 +381,7 @@
                 <img
                   src="Imagens/1704549015675.png"
                   class="card-img-top"
-                  alt="imagem da Marie Curie"
+                  alt="imagem da Sustentabilidade Urbana e Cidades Inteligentes"
                 />
                 <div class="card-body">
                   <h4 class="card-title">Sustentabilidade Urbana e Cidades Inteligentes</h4>
